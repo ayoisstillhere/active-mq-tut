@@ -19,11 +19,11 @@ public class ProducerResource {
     @Autowired
     Queue queue;
 
-    @GetMapping("/{message")
+    @GetMapping("/{message}")
     public String publish(@PathVariable("message") final String message) {
 
         jmsTemplate.convertAndSend(queue, message);
-        
+
         return "Published Successfuly";
 
     }
