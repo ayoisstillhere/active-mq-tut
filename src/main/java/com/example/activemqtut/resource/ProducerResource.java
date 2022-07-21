@@ -12,7 +12,7 @@ public class ProducerResource {
     @GetMapping("/{message")
     public String publish(@PathVariable("message") final String message) {
 
-        
+
 
     }
 }
